@@ -1,0 +1,52 @@
+:root {
+    --borda-artigo: #FF6A0054;
+    --fundo-transparente: #00000050;
+    --fundo-vinho: #900023CC;
+}
+
+main {
+    width: 100%;
+    margin: 2vmin 0;
+}
+
+.artigo {
+    width: 94%;
+    margin: 2vmin auto;
+    border: 2px solid var(--borda-artigo);
+    border-radius: 5px;
+    background-color: var(--fundo-transparente);
+}
+
+.artigo__bloco__titulo {
+    background-color: var(--fundo-vinho);
+}
+
+.artigo__bloco__titulo__texto {
+    text-align: center;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 2.1rem;
+}
+
+.artigo__bloco__texto {
+    padding: 3vh 4% 2vh;
+    text-align: justify;
+}
+
+.artigo__imagem__float {
+    width: 30%;
+    margin: 0 6vmin 6vmin 3vmin;
+    float: left;
+}
+
+.artigo__imagem__meio {
+    width: 100%;
+    margin: 1vmin auto 3vmin;
+}
+
+.artigo__texto {
+    line-height: 1.6rem;
+    text-indent: 10%;
+    margin-bottom: 1vh;
+}

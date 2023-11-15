@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&family=Monda:wght@400;700&display=swap');
+
+:root {
+    --degrade1_cor1: #DB2020;
+    --degrade1_cor2: #6C3276DD;
+    --marrom: #592E2E;
+    --degrade2_cor1: #6C3276DD;
+    --degrade2_cor2: #3E2D41;
+    --degrade3_cor1: #634667F0;
+    --degrade3_cor2: #84348DEA;
+    --degrade3_cor3: #A451AEDD;
+    --degrade4_cor1: #00000000;
+    --degrade4_cor2: #000;
+    --laranja: #FF8400;
+    --vinho: #AF3F00;
+    --branco: #FFF;
+    --preto: #000;
+    --preto_hover: #00000066;
+    --vermelho: #F00;
+    --transparente: #00000018;
+    --fonte_titulos: 'Metamorphous', serif;
+    --fonte_padrao: 'Monda', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../imagens/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    font-family: var(--fonte_padrao);
+    color: var(--branco);
+}
+
+a {
+    color: var(--branco);
+}
+
+.cabecalho {
+    background-image: linear-gradient(to bottom, var(--degrade1_cor1), var(--degrade1_cor2));
+    display: grid;
+    grid-template-columns: 25% 75%;
+    padding: 1vmin 1vw;
+    border-bottom: 1px solid var(--marrom);
+}
+
+.cabecalho__logo {
+    width: 100%;
+    margin: auto 2vmin;
+}
+
+.cabecalho__titulo {
+    font-family: var(--fonte_titulos);
+    font-weight: bold;
+    text-align: center;
+    align-self: center;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 2px var(--laranja), 3px 4px 5px var(--preto);
+}
+
+.menu {
+    background-image: linear-gradient(to bottom, var(--degrade2_cor1), var(--degrade2_cor2));
+    border-bottom-left-radius: 4%;
+    border-bottom-right-radius: 4%;
+    border: 1px solid var(--transparente);
+    width: 100%;
+    text-align: left;
+    position: sticky;
+    top: 0;
+}
+
+.menu__icone {
+    width: 9%;
+    margin: 1vmin 1%;
+}
+
+.menu__icone:hover{
+    background-color: #FFFFFF66;
+    box-shadow: 0 0 4px var(--branco);
+}
+
+.menu__lista {
+    display: none;
+    background-image: linear-gradient(to bottom, var(--degrade3_cor1), var(--degrade3_cor2), var(--degrade3_cor3));
+    border-bottom-left-radius: 4%;
+    border-bottom-right-radius: 4%;
+    text-align: center;
+    padding: 1vmax 0;
+    font-variant: small-caps;
+}
+
+.menu__lista__item {
+    border-bottom: 1px solid var(--branco);
+}
+
+.menu__lista__item:last-child {
+    margin-bottom: 2vmin;
+}
+
+.menu__lista__item__link {
+    display: block;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.66);
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    padding: 1.5vmin 0;
+    transition: all 500ms;
+}
+
+.menu__lista__item__link:hover {
+    background-color: var(--preto_hover);
+    text-shadow: 2px 2px 2px var(--degrade1_cor1);
+    font-size: 1.4rem;
+    transition: all 500ms;
+}
+
+#menu__active {
+    text-shadow: 0 0 0 var(--vermelho), 2px 2px 2px var(--vinho), 4px 4px 4px var(--marrom);
+    font-size: 1.5rem;
+}
+
+.rodape {
+    background-image: linear-gradient(to bottom, var(--degrade4_cor1), var(--degrade4_cor2));
+    border-top: 4px solid var(--marrom);
+    width: 100%;
+    margin-top: 2vmax;
+    padding: 2vw 2vw;
+}
+
+.rodape__colunas {
+    display: grid;
+    grid-template-columns: 27% auto;
+    margin-bottom: 3vmax;
+    line-height: 1.3rem;
+}
+
+.rodape__titulo {
+    font-weight: bold;
+    font-size: 1.06rem;
+    align-self: center;
+    text-shadow: 2px 3px 4px var(--vermelho);
+}
+
+.rodape__links {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-size: 0.8rem;
+}
+
+.rodape__links__lista__item:hover {
+    list-style-type: disc;
+    text-shadow: 0 0 0 var(--laranja);
+}
+
+a.rodape__links__anchor {
+    display: block;
+    text-decoration: none;
+}
+
+a.rodape__links__anchor:visited {
+    text-decoration-line: underline;
+    text-decoration-color: var(--branco);
+}
+
+a.rodape__links__lista__item:active {
+    color: blue;
+    text-decoration-color: blue;
+}
+
+.rodape__paragrafo {
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 1vmin auto;
+}
+
+.rodape__paragrafo__simbolo {
+    display: inline-block;
+    transform: rotate(180deg);
+}
