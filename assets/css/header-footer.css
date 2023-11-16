@@ -182,3 +182,8 @@ a.rodape__links__lista__item:active {
     display: inline-block;
     transform: rotate(180deg);
 }
+
+#link_secreto {
+    text-decoration: none;
+    color: var(--branco);
+}

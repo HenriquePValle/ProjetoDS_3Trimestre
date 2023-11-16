@@ -1,0 +1,66 @@
+:root {
+    --borda_itens: #FF0000C6;
+    --cor_texto: #FFFFFF;
+    --cor_titulo: #F9F9F9;
+    --sombra_titulo: #000000;
+    --fonte_hover: #FFF500;
+    --sombra_hover: #FF000000;
+    --texto_hover: #FF8A00;
+    --sombra_texto_hover: #000000CC;
+}
+
+.artigo__conteudo__lista {
+    width: 100%;
+    margin: 1vmin auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.conteudo__lista__item {
+    display: inline-block;
+    border: 2px solid var(--borda_itens);
+    color: var(--cor_fonte);
+    text-align: center;
+    width: 40%;
+    margin: 1vmin 4% 3vmin;
+    padding: 1vmin;
+    transition: all 500ms;
+}
+
+.conteudo__lista__item:hover {
+    box-shadow: 0 0 5px var(--texto_hover);
+    transition: all 500ms;
+}
+
+.lista__item__link {
+    display: block;
+    text-decoration: none;
+}
+
+.item__link__titulo {
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: 0 0 5px var(--sombra_titulo);
+}
+
+.lista__item__link:hover > .item__link__titulo {
+    color: var(--fonte_hover);
+    text-shadow: 0 0 5px var(--sombra_hover);
+}
+
+.item__link__imagem {
+    width: 90%;
+    margin: 2vmin auto;
+}
+
+.item__link__texto {
+    font-size: 1rem;
+    margin-bottom: 2vmin;
+}
+
+.lista__item__link:hover > .item__link__texto {
+    color: var(--texto_hover);
+    text-shadow: 0 4px 4px var(--sombra_texto_hover);
+}

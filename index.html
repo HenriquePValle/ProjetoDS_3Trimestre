@@ -17,11 +17,11 @@
         <h1 class="cabecalho__titulo">Análise de Código</h1>
     </header>
     <nav class="menu">
-        <img class="menu__icone" src="assets/imagens/icone-menu.png" alt="Ícone do menu"/>
-        <ul class="menu__lista">
-            <li class="menu__lista__item"><a class="menu__lista__item__link" id="menu__active" href="">Home</a></li>
+        <img class="menu__icone" src="assets/imagens/icone-menu.png" alt="Ícone do menu" onclick="abrirMenu()" id="menu__icone"/>
+        <ul class="menu__lista" id="menu">
+            <li class="menu__lista__item"><a class="menu__lista__item__link" id="menu__active" href="index.html">Home</a></li>
             <li class="menu__lista__item"><a class="menu__lista__item__link" href="">T.I.</a></li>
-            <li class="menu__lista__item"><a class="menu__lista__item__link" href="">Disciplinas</a></li>
+            <li class="menu__lista__item"><a class="menu__lista__item__link" href="paginas/disciplinas.html">Disciplinas</a></li>
             <li class="menu__lista__item"><a class="menu__lista__item__link" href="">Referências</a></li>
             <li class="menu__lista__item"><a class="menu__lista__item__link" href="">Desenvolvedores</a></li>
             <li class="menu__lista__item"><a class="menu__lista__item__link" href="">Segurança da Informação</a></li>
@@ -80,8 +80,8 @@
             </nav>
         </div>
         <p class="rodape__paragrafo">Site desenvolvido para divulgação de materiais e conteúdos de T.I.</p>
-        <p class="rodape__paragrafo"><span class="rodape__paragrafo__simbolo">&#9400;</span> CopyLeft - Defenda o Software Livre! <span class="rodape__paragrafo__simbolo">&#9400;</span></p>
+        <p class="rodape__paragrafo"><span class="rodape__paragrafo__simbolo">&#9400;</span> <a id="link_secreto" href="paginas/secret.html">CopyLeft</a> - Defenda o Software Livre! <span class="rodape__paragrafo__simbolo">&#9400;</span></p>
     </footer>
+    <script src="assets/scripts/menu.js"></script>
 </body>
-
 </html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor HPV - Disciplinas</title>
+    <link rel="icon" href="../assets/imagens/icone-mustang.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="../assets/css/reset.css"/>
+    <link rel="stylesheet" href="../assets/css/header-footer.css"/>
+    <link rel="stylesheet" href="../assets/css/conteudo.css"/>
+    <link rel="stylesheet" href="../assets/css/conteudo-listas.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho__logo" src="../assets/imagens/icone-hughes.png" alt="Imagem de personagem de anime"/>
+        <h1 class="cabecalho__titulo">Análise de Código</h1>
+    </header>
+    <nav class="menu">
+        <img class="menu__icone" src="../assets/imagens/icone-menu.png" alt="Ícone do menu" id="menu__icone" onclick="abrirMenu()"/>
+        <ul class="menu__lista" id="menu">
+            <li class="menu__lista__item"><a class="menu__lista__item__link" href="../index.html">Home</a></li>
+            <li class="menu__lista__item"><a class="menu__lista__item__link" href="">T.I.</a></li>
+            <li class="menu__lista__item"><a class="menu__lista__item__link" id="menu__active" href="disciplinas.html">Disciplinas</a></li>
+            <li class="menu__lista__item"><a class="menu__lista__item__link" href="">Referências</a></li>
+            <li class="menu__lista__item"><a class="menu__lista__item__link" href="">Desenvolvedores</a></li>
+            <li class="menu__lista__item"><a class="menu__lista__item__link" href="">Segurança da Informação</a></li>
+            <li class="menu__lista__item"><a class="menu__lista__item__link" href="">Contato</a></li>
+            <li class="menu__lista__item"><a class="menu__lista__item__link" href="">Sobre o Site</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article class="artigo">
+            <div class="artigo__bloco__titulo">
+                <h2 class="artigo__bloco__titulo__texto">Disciplinas</h2>
+            </div>
+            <div class="artigo__bloco__texto">
+                <p class="artigo__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nobis quam obcaecati? Minima rem, nostrum excepturi, deleniti iusto pariatur natus veniam iure incidunt labore culpa dignissimos enim aperiam perspiciatis commodi.</p>
+            </div>
+            <ul class="artigo__conteudo__lista">
+                <li class="conteudo__lista__item">
+                    <a class="lista__item__link" href="disciplinas/front-end.html">
+                        <h3 class="item__link__titulo">Programação Front-End</h3>
+                        <img class="item__link__imagem" src="../assets/imagens/front-end.jpg" alt="Imagem representativa de HTML e CSS.">
+                        <p class="item__link__texto"><abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading StyleSheets">CSS</abbr> e JavaScript</p>
+                    </a>
+                </li>
+                <li class="conteudo__lista__item">
+                    <a class="lista__item__link" href="disciplinas/banco-dados.html">
+                        <h3 class="item__link__titulo">Banco de Dados</h3>
+                        <img class="item__link__imagem" src="../assets/imagens/banco-dados.jpg" alt="Imagem ilustrativa de um banco de dados.">
+                        <p class="item__link__texto">Modelo de Dados e <abbr title="Structured Querry Language">SQL</abbr></p>
+                    </a>
+                </li>
+                <li class="conteudo__lista__item">
+                    <a class="lista__item__link" href="disciplinas/ciencias-computacao.html">
+                        <h3 class="item__link__titulo">Ciências da Computação</h3>
+                        <img class="item__link__imagem" src="../assets/imagens/ciencias.jpg" alt="Imagem ilustrativa de um processador.">
+                        <p class="item__link__texto">Arquitetura, Redes e Robótica</p>
+                    </a>
+                </li>
+                <li class="conteudo__lista__item">
+                    <a class="lista__item__link" href="disciplinas/analise-projeto.html">
+                        <h3 class="item__link__titulo">Análise e Projeto</h3>
+                        <img class="item__link__imagem" src="../assets/imagens/analise.jpg" alt="Imagem ilustrativa de um quadro Kanban.">
+                        <p class="item__link__texto">Processo de Software e <abbr title="Unified Modeling Language">UML</abbr></p>
+                    </a>
+                </li>
+                <li class="conteudo__lista__item">
+                    <a class="lista__item__link" href="disciplinas/logica.html">
+                        <h3 class="item__link__titulo">Lógica Computacional</h3>
+                        <img class="item__link__imagem" src="../assets/imagens/logica.jpg" alt="Imagem ilustrativa de algumas engrenagens.">
+                        <p class="item__link__texto">Lógica e Algoritmos</p>
+                    </a>
+                </li>
+                <li class="conteudo__lista__item">
+                    <a class="lista__item__link" href="disciplinas/informatica.html">
+                        <h3 class="item__link__titulo">Informática Básica</h3>
+                        <img class="item__link__imagem" src="../assets/imagens/informatica-basica.jpg" alt="Imagem ilustrativa de um computador.">
+                        <p class="item__link__texto">Fundamentos da Informática</p>
+                    </a>
+                </li>
+            </ul>
+        </article>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape__colunas">
+            <h1 class="rodape__titulo">Codificando</h1>
+            <nav class="rodape__links">
+                <ul class="rodape__links__lista">
+                    <li class="rodape__links__lista__item"><a class="rodape__links__anchor" href="">Contato</a></li>
+                    <li class="rodape__links__lista__item"><a class="rodape__links__anchor" href="">Cultura Geek</a>
+                    </li>
+                    <li class="rodape__links__lista__item"><a class="rodape__links__anchor" href="">Malwares</a></li>
+                    <li class="rodape__links__lista__item"><a class="rodape__links__anchor" href="">Dicas</a></li>
+                </ul>
+                <ul class="rodape__links__lista">
+                    <li class="rodape__links__lista__item"><a class="rodape__links__anchor" href="">Softwares</a></li>
+                    <li class="rodape__links__lista__item"><a class="rodape__links__anchor" href="">Referências</a></li>
+                    <li class="rodape__links__lista__item"><a class="rodape__links__anchor" href="">Artigos</a></li>
+                    <li class="rodape__links__lista__item"><a class="rodape__links__anchor" href="">Blog</a></li>
+                </ul>
+                <ul class="rodape__links__lista">
+                    <li class="rodape__links__lista__item"><a class="rodape__links__anchor" href="">DeepWeb</a></li>
+                    <li class="rodape__links__lista__item"><a class="rodape__links__anchor" href="">Melted Images</a>
+                    </li>
+                    <li class="rodape__links__lista__item"><a class="rodape__links__anchor" href="">Random</a></li>
+                    <li class="rodape__links__lista__item"><a class="rodape__links__anchor" href="">Não Entre</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="rodape__paragrafo">Site desenvolvido para divulgação de materiais e conteúdos de T.I.</p>
+        <p class="rodape__paragrafo"><span class="rodape__paragrafo__simbolo">&#9400;</span> <a id="link_secreto" href="../paginas/secret.html">CopyLeft</a> - Defenda o Software Livre! <span class="rodape__paragrafo__simbolo">&#9400;</span></p>
+    </footer>
+    <script src="../assets/scripts/menu.js"></script>
+</body>
+</html>
