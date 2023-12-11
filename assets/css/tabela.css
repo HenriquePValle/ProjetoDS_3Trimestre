@@ -1,0 +1,81 @@
+
+
+.tabela {
+    width: 95%;
+    margin: 1vh auto;
+    text-align: center;
+}
+
+.tabela__cabecalho {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.tabela__titulo {
+    line-height: 2rem;
+    font-size: 1.3rem;
+}
+
+.tabela__cabecalho__linha {
+    line-height: 1.6rem;
+    background-color: #882424;
+}
+
+.tabela__body__linha {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.tabela__body__linha:nth-child(even) {
+    background-color: #b94f4fea;
+}
+
+.tabela__rodape {
+    font-style: italic;
+    font-size: 0.8rem;
+    background-color: #632a2a;
+}
+
+.tabela__rodape__linha {
+    line-height: 1.2rem;
+}
+
+
+#formulario {
+    width: 100%;
+}
+
+.formulario__titulo {
+    font-size: 1rem;
+    margin: 0 auto 3vh;
+    font-weight: bold;
+}
+
+.formulario__labels {
+    display: block;
+    font-size: 0.95rem;
+    margin: 2vmin auto 1vmin ;
+}
+
+.formulario__entrada {
+    display: block;
+    width: 80%;
+    margin-bottom: 2vh;
+    font-size: 0.9rem;
+    padding: 1vmin 1vmin 1vmin 2vmin;
+}
+
+#aluno_nota {
+    width: 30%;
+}
+
+.formulario__botao {
+    display: block;
+    width: 33%;
+    margin: 2vh auto;
+    padding: 1vh 1vw;
+    font-weight: bold;
+    border: none;
+    background-color: #cb4040ea;
+    color: white;
+}

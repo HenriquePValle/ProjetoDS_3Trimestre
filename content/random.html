@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor HPV - Random</title>
+    <link rel="shortcut icon" href="../assets/imagens/icone-mustang.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/header-footer.css">
+    <link rel="stylesheet" href="../assets/css/conteudo.css">
+    <link rel="stylesheet" href="../assets/css/tabela.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho__logo" src="../assets/imagens/icone-alphonse.png" alt="Imagem de personagem de anime"/>
+        <h1 class="cabecalho__titulo">Análise de Código</h1>
+    </header>
+    <nav class="menu">
+        <img class="menu__icone" src="../assets/imagens/icone-menu.png" alt="Ícone do menu" onclick="abrirMenu()" id="menu__icone"/>
+        <ul class="menu__lista" id="menu">
+            <li class="menu__lista__item"><a class="menu__lista__item__link" href="../index.html">Home</a></li>
+            <li class="menu__lista__item"><a class="menu__lista__item__link" href="">T.I.</a></li>
+            <li class="menu__lista__item"><a class="menu__lista__item__link" href="disciplinas.html">Disciplinas</a></li>
+            <li class="menu__lista__item"><a class="menu__lista__item__link" href="">Referências</a></li>
+            <li class="menu__lista__item"><a class="menu__lista__item__link" href="">Desenvolvedores</a></li>
+            <li class="menu__lista__item"><a class="menu__lista__item__link" href="">Segurança da Informação</a></li>
+            <li class="menu__lista__item"><a class="menu__lista__item__link" href="">Contato</a></li>
+            <li class="menu__lista__item"><a class="menu__lista__item__link" href="">Sobre o Site</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article class="artigo">
+            <div class="artigo__bloco__titulo">
+                <h2 class="artigo__bloco__titulo__texto">Formulário</h2>
+            </div>
+            <div class="artigo__bloco__texto">
+                <form id="formulario" autocomplete="off">
+                    <h3 class="formulario__titulo">Inserir Alunos</h3>
+                    <label class="formulario__labels" for="aluno_nome">Nome</label>
+                    <input type="text" class="formulario__entrada" name="aluno_nome" id="aluno_nome" maxlength="50" placeholder="Nome do Aluno" required>
+                    <label class="formulario__labels" for="aluno_nota">Nota</label>
+                    <input type="number" class="formulario__entrada" name="aluno_nota" id="aluno_nota" placeholder="0.0" required min="0.0" max="10" step="0.1">
+                    <input type="button" class="formulario__botao" value="Inserir Dados" onclick="inserirDados()"/>
+                </form>
+            </div>
+        </article>
+        <article class="artigo">
+            <div class="artigo__bloco__titulo">
+                <h2 class="artigo__bloco__titulo__texto">Dados</h2>
+            </div>
+            <div class="artigo__bloco__texto">
+                <!-- tabela -->
+                <table class="tabela">
+                    <thead class="tabela__cabecalho">
+                        <tr class="tabela__cabecalho__linha">
+                            <th class="tabela__titulo" colspan="4">Notas do Alunos</th>
+                        </tr>
+                        <tr class="tabela__cabecalho__linha">
+                            <th class="tabela__cabecalho__nome_coluna">Número</th>
+                            <th class="tabela__cabecalho__nome_coluna">Nome</th>
+                            <th class="tabela__cabecalho__nome_coluna">Média</th>
+                            <th class="tabela__cabecalho__nome_coluna">Situação</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tabela__body">
+                        <tr class="tabela__body__linha">
+                            <td class="tabela__linha__numero">1</td>
+                            <td class="tabela__linha__nome">Eduarda</td>
+                            <td class="tabela__linha__nota">7.0</td>
+                            <td class="tabela__linha__situacao">Aprovado</td>
+                        </tr>
+                        <tr class="tabela__body__linha">
+                            <td class="tabela__linha__numero">2</td>
+                            <td class="tabela__linha__nome">Matheus</td>
+                            <td class="tabela__linha__nota">5.9</td>
+                            <td class="tabela__linha__situacao">Reprovado</td>
+                        </tr>
+                        <tr class="tabela__body__linha">
+                            <td class="tabela__linha__numero">3</td>
+                            <td class="tabela__linha__nome">Rafael</td>
+                            <td class="tabela__linha__nota">5.0</td>
+                            <td class="tabela__linha__situacao">Reprovado</td>
+                        </tr>
+                        <tr class="tabela__body__linha">
+                            <td class="tabela__linha__numero">4</td>
+                            <td class="tabela__linha__nome">Luis</td>
+                            <td class="tabela__linha__nota">4.3</td>
+                            <td class="tabela__linha__situacao">Reprovado</td>
+                        </tr>
+                    </tbody>
+                    <tfoot class="tabela__rodape">
+                        <tr class="tabela__rodape__linha">
+                            <td class="tabela__rodape__linha__dado" colspan="4">Notas Finais.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </article>
+        <article class="artigo">
+            <div class="artigo__bloco__titulo">
+                <h2 class="artigo__bloco__titulo__texto">Informações usando JavaScript</h2>
+            </div>
+            <div class="artigo__bloco__texto">
+                <script>
+                    let nome = 'Henrique';
+                    document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.<br/><br/>`);
+                    document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br/><br/>`);
+                    let valor_float = 3.141592653589793238462643383279502884197;
+                    document.write(valor_float.toFixed(3).replace('.', ','));
+                    let moeda = 1328.82;
+                    document.write('<br/><br/>'+moeda.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}));
+                    document.write('<br/><br/>'+moeda.toLocaleString('pt-BR', {style: 'currency', currency: 'CNY'}));
+                    document.write('<br/><br/>'+moeda.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}));
+                </script>
+            </div>
+        </article>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape__colunas">
+            <h1 class="rodape__titulo">Codificando</h1>
+            <nav class="rodape__links">
+                <ul class="rodape__links__lista">
+                    <li class="rodape__links__lista__item"><a class="rodape__links__anchor" href="">Contato</a></li>
+                    <li class="rodape__links__lista__item"><a class="rodape__links__anchor" href="">Cultura Geek</a>
+                    </li>
+                    <li class="rodape__links__lista__item"><a class="rodape__links__anchor" href="">Malwares</a></li>
+                    <li class="rodape__links__lista__item"><a class="rodape__links__anchor" href="">Dicas</a></li>
+                </ul>
+                <ul class="rodape__links__lista">
+                    <li class="rodape__links__lista__item"><a class="rodape__links__anchor" href="">Softwares</a></li>
+                    <li class="rodape__links__lista__item"><a class="rodape__links__anchor" href="">Referências</a></li>
+                    <li class="rodape__links__lista__item"><a class="rodape__links__anchor" href="">Artigos</a></li>
+                    <li class="rodape__links__lista__item"><a class="rodape__links__anchor" href="">Blog</a></li>
+                </ul>
+                <ul class="rodape__links__lista">
+                    <li class="rodape__links__lista__item"><a class="rodape__links__anchor" href="#">DeepWeb</a></li>
+                    <li class="rodape__links__lista__item"><a class="rodape__links__anchor" href="">Melted Images</a>
+                    </li>
+                    <li class="rodape__links__lista__item"><a class="rodape__links__anchor" href="">Random</a></li>
+                    <li class="rodape__links__lista__item"><a class="rodape__links__anchor" href="">Não Entre</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="rodape__paragrafo">Site desenvolvido para divulgação de materiais e conteúdos de T.I.</p>
+        <p class="rodape__paragrafo"><span class="rodape__paragrafo__simbolo">&#9400;</span> <a id="link_secreto" href="secret.html">CopyLeft</a> - Defenda o Software Livre! <span class="rodape__paragrafo__simbolo">&#9400;</span></p>
+    </footer>
+    <script src="../assets/scripts/menu.js"></script>
+    <script src="../assets/scripts/dados.js"></script>
+</body>
+</html>
